@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialBook</title>
+    <!-- css file is connected below -->
+    <link rel="stylesheet" href="style.css">
+    <!-- <!--  the below link you can get from font awesome website--for getting this link 1st you will login on the fontawesome.com and after it in the search bar of the website you will write kit code ..so one like will come under the heding of the your kits ..it will be under the tags of script you will copy it and paste in here > -->
+
+    <script src="https://kit.fontawesome.com/70ed6514d0.js" crossorigin="anonymous"></script>
+
+    <!-- the above given tag will give icon in the event loction which is on the rightside bar..on 18th march and 22nd june -->
+</head>
+<body>
+    <nav>   
+        <!-- we will make here to coloums..in 1 columns we will put logo and in 2 colums will add icons-->
+<div class="nav-left"> 
+    <img src="logo.png" class="logo">
+    <!-- this will be left side column -->
+<!-- for adding logo will add img --will give here complete path of the image like folder name is image and file name is logo.png>
+<!-this will be right side column -->   
+    <!-- will put here 3 icons after logo for that will add here 3 <li> in one <ul> tags -->  
+    <ul>
+         <li><imag src="notification.png"><i class="fa-sharp fa-solid fa-bell"></i></li>
+         <li><imag src="inbox.png"><i class="fa-solid fa-envelope"></i></li>
+          <li><imag src="video.png"><i class="fa-sharp fa-solid fa-video"></i></li>   
+    </ul>
+     </div>
+<div class="nav-right">
+<!-- here will add 1 search box and 1 user icon -->
+        <div class="search-box">
+            <img src="search.png">
+            <input type="text" placeholder="Search">
+        </div>
+        <!-- below div is for the user icon ... 1st class for icon and 2nd class for showing the user is online or offline-->
+        <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+ <!-- onclick="settingsMenuToggle()" is a java language...now b -->
+           
+            <img src="profile-pic.png">
+        </div>
+</div>
+            <!--  will make another div for adding 
+                drop down a
+            arrow with icon picture -->
+
+            <div class="settings-menu"> 
+                <!-- will make another div for giving padding -->
+                
+                <div class="settings-menu-inner">
+                    <div class="user-profile">
+                        <img src="profile-pic.png">
+          <!-- user name and other informations like this post will
+           going to be public or private -for that add div -->
+          <div>
+              <p> Sadia Omer</p>
+              <!-- here below we gave and <i> which is an down arrow \'s icon ..we picked its link from font awesom website -->
+              <a href="#"> See your profile</a> 
+              </div>
+          </div>
+
+<hr>
+
+          <div class="user-profile">
+            <img src="feedback.png">
+      <!-- user name and other informations like this post will
+      going to be public or private -for that add div -->
+      <div>
+      <p> Give Feedback</p>  
+      <!-- here below we gave and <i> which is an down arrow \'s icon ..we picked its link from font awesom website -->  
+      <a href="#"> Help us to improve the new design</a> 
+      </div>
+      </div>
+      <hr>
+      <div class="setting-links">
+        <!-- settings logo,arrow will appera after give feedback option
+         -->
+        <img src="setting.png" class="settings-icon">
+        <a href="#"> Settings & Privacy <img src="arrow.png" width=" 10px"
+        ></a>
+      </div>
+<!--  -->
+<div class="setting-links">
+    <!-- settings logo,arrow will appera after give feedback option
+     -->
+    <img src="help.png" class="settings-icon">
+    <a href="#"> Help & Support<img src="arrow.png" width=" 10px"
+    ></a>
+  </div>
+  <!--  -->
+  <div class="setting-links">
+    <!-- settings logo,arrow will appera after give feedback option
+     -->
+    <img src="display.png" class="settings-icon">
+    <a href="#"> Display & Accessbility<img src="arrow.png" width=" 10px"
+    ></a>
+  </div>
+  <div class="setting-links">
+    <!-- settings logo,arrow will appera after give feedback option
+     -->
+    <img src="logout.png" class="settings-icon">
+    <a href="#"> Logout<img src="arrow.png" width=" 10px"
+    ></a>
+  </div>
+    </div>
+               
+</div>
+  </nav>
+  <!-- nav tag we closed -->
+
+
+
+<!-- now here we  need 3 columns so will make total 4 divs ---1 left ,2 center and 3rd right side div all of these 3 divs will be under container div -->
+<div class="container">
+    <!-- 1nd div making below -->
+    <div class="left-sidebar">
+        <div class="img-links">
+            <a href="#"><img src="news.png"> Latest News</a>
+            <a href="#"><img src="friends.png"> Friends</a>
+            <a href="#"><img src="group.png"> Group</a>
+            <a href="#"><img src="marketplace.png"> Marketplace</a>
+            <a href="#"><img src="watch.png"> Watch</a>
+            <a href="#"> See More</a>
+        </div>
+        <!-- here will give another div for giving more options with images after see more -->
+        <div class="shortcut-links">
+            <p>Your Shortcuts</p>
+            <a href= "#" ><img src="shortcut-1.png"> Web Developers</a>
+            <a href= "#" ><img src="shortcut-2.png"> Web Design Course</a>
+            <a href= "#" ><img src="shortcut-3.png"> Full Stack Development</a>
+            <a href= "#" ><img src="shortcut-4.png"> Websits Expert </a>
+
+
+        </div>
+    </div>
+    
+    <!-- 2nd div making below ..it will be visiable on the middle of the website-->
+
+    <div class="main-content">
+<div class="story-gallery">
+    <!-- here will add multiple stories in different divs -->
+<!-- here will write 2 classes name in one tag ..like class="story story 1" here one class name is story and another clas name is story 1..otherwise all picture will be the same  -->
+    <div class="story story1">
+    <img src="upload.png" >
+    <p> Post Story</p>
+</div>
+<!-- make another div ..and add 2nd story -->
+<div class="story story2">
+    <img src="member-1.png" >
+    <p> Peter</p>
+</div>
+
+<div class="story story3">
+    <img src="member-2.png" >
+    <p> Harry</p>
+</div>
+
+<div class="story story4">
+    <img src="member-3.png" >
+    <p> Izabell</p>
+</div>
+
+<div class="story story5">
+    <img src="member-4.png" >
+    <p>Marry</p>
+</div>
+</div>
+
+<!-- will make here another div ..for posts -->
+<div class="write-post-container">
+    <!-- will make user profile and user image in another div -->
+<div class="user-profile">
+    <img src="profile-pic.png">
+    <!-- user name and other informations like this post will
+    <!-- going to be public or private -for that add div -->
+    <div>
+        <p> Sadia Ome</p>
+        <!-- here below we gave and <i> which is an down arrow \'s icon ..we picked its link from font awesom website' -->
+        <small>Public <i class="fa-sharp fa-solid fa-caret-down"></i></small> 
+    </div>
+</div>
+<!--  -->
+<div class="post-input-container">
+    <textarea rows="3" placeholder="what's on your mind ,Sadia Ome?"></textarea>
+<!-- <div class="add-post-links">
+    <a href="#"> <img src="video.png"></a> -->
+
+    <div class="add-post-links">
+        <a href="#"> <img src="live-video.png"> Live Video</a>
+        <a href="#"> <img src="photo.png"> Photo Video</a>
+        <a href="#"> <img src="feeling.png"> feling/Activity</a>
+    </div>
+</div>
+</div>
+
+<!--  -->
+<div class="post-container">
+    <div class="post-row">
+        <div class="user-profile">
+            <img src="profile-pic.png">
+            <!-- user name and other informations like this post will
+            <!-- going to be public or private -for that add div -->
+            <div>
+                <p> Sadia Ome</p>
+                <!-- here below we gave and <i> which is an down arrow \'s icon .
+                    .we picked its link from font awesom website' -->
+                <span> June 24 2021, 13:40 pm</span>
+        </div>
+    </div>
+
+               <a href="#"><i class="fas fa-ellipsis-v"></i></a>   
+               <!-- here abone <i> is for : there vertical dots -->
+
+
+
+
+    </div>
+    
+<p class="post-text"> 
+    Subscribe <span> @ YouTube</span> watch more videos. 
+    <a href="#"> #EasyTutorial</a>
+    <a href="#"> #YouTubeChannel</a></p>
+    <img src="feed-image-1.png" class="post-img">
+    <!--  -->
+
+    <div class="post-row">
+        <!-- will add two colums by making to divs left for icons and 
+            right for user profile image ... -->
+            <div class="activity-icons">
+                <!--  -->
+                <div> <img src="like.png">120</div>
+                <div> <img src="comments.png">45</div>
+                <div> <img src="share.png">20</div>
+
+            </div>
+            <!--  -->
+            <div class="post-profile-icons">
+                <img src="profile-pic.png"> <i class="fa-sharp fa-solid fa-caret-down"></i>
+            </div>
+    </div>
+</p>
+<!--  -->
+<div class="post-container">
+    <div class="post-row">
+        <div class="user-profile">
+            <img src="profile-pic.png">
+            <!-- user name and other informations like this post will
+            <!-- going to be public or private -for that add div -->
+            <div>
+                <p> Sadia Omer</p>
+                <!-- here below we gave and <i> which is an down arrow \'s icon .
+                    .we picked its link from font awesom website' -->
+                <span> June 24 2021, 13:40 pm</span>
+        </div>
+    </div>
+
+               <a href="#"><i class="fas fa-ellipsis-v"></i></a>   
+               <!-- here abone <i> is for : there vertical dots -->
+
+
+
+
+    </div>
+    
+<p class="post-text"> 
+    Subscribe <span> @ YouTube</span> watch more videos. 
+    <a href="#"> #EasyTutorial</a>
+    <a href="#"> #YouTubeChannel</a>
+    <img src="feed-image-3.png" class="post-img">
+    <!--  -->
+
+    <div class="post-row">
+        <!-- will add two colums by making to divs left for icons and 
+            right for user profile image ... -->
+            <div class="activity-icons">
+                <!--  -->
+                <div> <img src="like-blue.png">120</div>
+                <div> <img src="comments.png">45</div>
+                <div> <img src="share.png">20</div>
+
+            </div>
+            <!--  -->
+            <div class="post-profile-icons">
+                <img src="profile-pic.png"> <i class="fa-sharp fa-solid fa-caret-down"></i>
+            </div>
+    </div>
+</p>
+
+</div>
+<!--  -->
+<div class="post-container">
+    <div class="post-row">
+        <div class="user-profile">
+            <img src="profile-pic.png">
+            <!-- user name and other informations like this post will
+            <!-- going to be public or private -for that add div -->
+            <div>
+                <p> Sadia Omer</p>
+                <!-- here below we gave and <i> which is an down arrow \'s icon .
+                    .we picked its link from font awesom website' -->
+                <span> June 24 2021, 13:40 pm</span>
+        </div>
+    </div>
+
+               <a href="#"><i class="fas fa-ellipsis-v"></i></a>   
+               <!-- here abone <i> is for : there vertical dots -->
+
+
+
+
+    </div>
+    
+<p class="post-text"> 
+    Subscribe <span> @ YouTube</span> watch more videos. 
+    <a href="#"> #EasyTutorial</a>
+    <a href="#"> #YouTubeChannel</a>
+    <img src="feed-image-4.png" class="post-img">
+    <!--  -->
+
+    <div class="post-row">
+        <!-- will add two colums by making to divs left for icons and 
+            right for user profile image ... -->
+            <div class="activity-icons">
+                <!--  -->
+                <div> <img src="like-blue.png">120</div>
+                <div> <img src="comments.png">45</div>
+                <div> <img src="share.png">20</div>
+
+            </div>
+            <!--  -->
+            <div class="post-profile-icons">
+                <img src="profile-pic.png"> <i class="fa-sharp fa-solid fa-caret-down"></i>
+            </div>
+    </div>
+</p>
+
+</div><!--  -->
+<div class="post-container">
+    <div class="post-row">
+        <div class="user-profile">
+            <img src="profile-pic.png">
+            <!-- user name and other informations like this post will
+            <!-- going to be public or private -for that add div -->
+            <div>
+                <p> Sadia Omer</p>
+                <!-- here below we gave and <i> which is an down arrow \'s icon .
+                    .we picked its link from font awesom website' -->
+                <span> June 24 2021, 13:40 pm</span>
+        </div>
+    </div>
+
+               <a href="#"><i class="fas fa-ellipsis-v"></i></a>   
+               <!-- here abone <i> is for : there vertical dots -->
+
+
+
+
+    </div>
+    
+<p class="post-text"> 
+    Subscribe <span> @ YouTube</span> watch more videos. 
+    <a href="#"> #EasyTutorial</a>
+    <a href="#"> #YouTubeChannel</a>
+    <img src="feed-image-5.png" class="post-img">
+    <!--  -->
+
+    <div class="post-row">
+        <!-- will add two colums by making to divs left for icons and 
+            right for user profile image ... -->
+            <div class="activity-icons">
+                <!--  -->
+                <div> <img src="like-blue.png">120</div>
+                <div> <img src="comments.png">45</div>
+                <div> <img src="share.png">20</div>
+
+            </div>
+            <!--  -->
+            <div class="post-profile-icons">
+                <img src="profile-pic.png"> <i class="fa-sharp fa-solid fa-caret-down"></i>
+            </div>
+    </div>
+</p>
+
+</div>
+</div>
+<!--  -->
+<div class="post-container">
+    <div class="post-row">
+        <div class="user-profile">
+            <img src="profile-pic.png">
+            <!-- user name and other informations like this post will
+            <!-- going to be public or private -for that add div -->
+            <div>
+                <p> Sadia Omer</p>
+                <!-- here below we gave and <i> which is an down arrow \'s icon .
+                    .we picked its link from font awesom website' -->
+                <span> June 24 2021, 13:40 pm</span>
+        </div>
+    </div>
+
+               <a href="#"><i class="fas fa-ellipsis-v"></i></a>   
+               <!-- here abone <i> is for : there vertical dots -->
+
+
+
+
+    </div>
+    
+<p class="post-text"> 
+    like and share this video with friends,tag<span> @ YouTube</span> facebook page on your post,Ask your doubts in the 
+    comments
+    <a href="#"> #EasyTutorial</a>
+    <a href="#"> #YouTubeChannel</a></p>
+    <img src="feed-image-2.png" class="post-img">
+    <!--  -->
+
+    <div class="post-row">
+        <!-- will add two colums by making to divs left for icons and 
+            right for user profile image ... -->
+            <div class="activity-icons">
+                <!--  -->
+                <div> <img src="like-blue.png">120</div>
+                <div> <img src="comments.png">45</div>
+                <div> <img src="share.png">20</div>
+
+            </div>
+            <!--  -->
+            <div class="post-profile-icons">
+                <img src="profile-pic.png"> <i class="fa-sharp fa-solid fa-caret-down"></i>
+            </div>
+    </div>
+</p>
+
+</div>
+
+<!-- will make here button for load more -->
+<button type="button" class="load-more-btn">Load More </button>
+    </div>
+
+    <!-- 3nd div making below -->
+
+    <div class="right-sidebar">
+<!-- will make one dive here  -->
+<div class="sidebar-title">
+    <h4> Events</h4>
+    <a href="#">See All</a>
+</div>
+
+<!-- <!-- add anther div --will make 2 more divs in it 1 with the class name of left-event and 2 right-event> -->
+
+<div class="event">
+    <div class="left-event">
+    <!-- in h3 will add event date,which is 18th -->
+    <h3> 18</h3>
+    <!-- in the below span will add month of the event -->
+    <span> March</span>
+</div>
+    
+    <div class="right-event">
+        <!-- here will add event name,for that will add h4 -->
+        <h4>Social Media</h4>
+        <!-- in thebelow paragraph will add the location of the event -->
+        <p> <i class="fa-sharp fa-solid fa-location-dot"></i>Wills tech Park</p>
+        <!-- i picked the icon from the fontawesome website which is given in the above p tag -->
+        <a href="#">More Info</a>
+        <!-- after refreshing your website you can see the date,month,event name ,loction on the rightside of your website -->
+    
+    </div>
+    </div>
+    <!-- here will add one more event ,so we have to make 2 div for left and right event -->
+    
+    <div class="event">
+    <div class="left-event">
+    <!-- in h3 will add event date,which is 22nd -->
+    <h3> 22</h3>
+    <!-- in the below span will add month of the event -->
+    <span> June</span>
+</div>
+    
+    <div class="right-event">
+        <!-- here will add event name,for that will add h4 -->
+        <h4>Mobile Marketing</h4>
+        <!-- in thebelow paragraph will add the location of the event -->
+        <p> <i class="fa-sharp fa-solid fa-location-dot"></i>Wills tech Park</p>
+        <a href="#">More Info</a>
+        <!-- after refreshing your website you can see the date,month,event name ,loction on the rightside of your website -->
+    
+    </div>
+    </div>
+
+    <!-- add another div for advertisment pic and heading -->
+
+    <div class="sidebar-title">
+        <h4> Advertisment</h4>
+        <a href="#">Close</a>
+    </div>
+    <img src="advertisement.png" class="sidebar-ads">
+<!-- will add one more div for  -->
+<div class="sidebar-title">
+    <h4> conversation</h4>
+    <a href="#">Hide Chat</a>
+</div>
+<!-- in the below div we will make the list of the online socila media member list  -->
+
+<div class="online-list">
+<!--  -->
+
+<div class="online">
+    <img src="member-1.png">
+</div>
+<!-- in the below p tag will use the name of the user -->
+<p> Fatima</p>
+
+</div>
+<!--will make another div for another online user  -->
+<div class="online-list">
+<div class="online">
+    <img src="member-2.png">
+</div>
+<!-- in the below p tag will use the name of the user -->
+<p> Peter</p>
+
+</div>
+<div class="online-list">
+    <div class="online">
+        <img src="member-3.png">
+    </div>
+    <!-- in the below p tag will use the name of the user -->
+    <p> Marry</p>
+    
+    </div>
+    </div>
+</div>
+
+
+<!--  -->
+
+,<div class="footer">
+    <p> Copyright 2021 - Sadia turoial Youtube Channel </p>
+</div>
+
+<!-- here below we connected the javascript file with html -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
